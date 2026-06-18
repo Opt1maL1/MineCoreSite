@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Russo+One&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-logo: "Russo One", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-950: #0a0401;
+  --color-brand-900: #1c0a02;
+  --color-brand-800: #331204;
+  --color-brand-500: #f97316;
+  --color-brand-400: #fb923c;
+}
+
+body {
+  @apply bg-[#0a0a0a] text-white antialiased font-sans overflow-x-hidden;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
